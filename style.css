@@ -10,25 +10,19 @@
     position:relative;
 }
 .images>img{
-    transition:all 0.5s;
-}
-.images>img:nth-child(1){
+    transition:0.5s;
     position: absolute;
-    top: 0px;
+    top:0;
 }
-.images>img:nth-child(2){
-    position: absolute;
-    top: 0px;
-    left: 100%;
+img.current{
+    left:0;
+    transform: translateX(0);
+    z-index: 1;
 }
-.images>img:nth-child(3){
-    position: absolute;
-    top: 0px;
-    left: 100%;
+img.leave{
+    transform:translateX(-100%);
+    z-index: 1;
 }
-.images>img.right{
-    position: absolute;
-    top: 0px;
-    left: 100%;
-
+img.enter{
+    transform:translateX(100%);
 }
